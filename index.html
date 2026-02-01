@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>URBANSTEP – Fashion & Footwear</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:#0b0b0b;color:#fff}
+header{position:sticky;top:0;z-index:100;background:#000;display:flex;justify-content:space-between;align-items:center;padding:18px 50px;border-bottom:1px solid #222}
+.logo{font-size:24px;font-weight:bold;letter-spacing:4px;color:#f5c400}
+nav a{color:#fff;text-decoration:none;margin-left:25px;font-size:14px;opacity:.8}
+nav a:hover{opacity:1;color:#f5c400}
+.hero{min-height:95vh;display:flex;align-items:center;justify-content:space-between;padding:60px 50px;background:linear-gradient(120deg,#000,#111)}
+.hero-text{max-width:520px}
+.hero-text h1{font-size:64px;line-height:1.1;color:#f5c400}
+.hero-text p{margin:25px 0;opacity:.85}
+.btn{padding:15px 36px;border:none;font-weight:bold;cursor:pointer;background:#f5c400;color:#000}
+.hero img{width:45%;filter:drop-shadow(0 30px 60px rgba(0,0,0,.8))}
+section{padding:90px 50px}
+h2{text-align:center;font-size:42px;margin-bottom:60px;color:#f5c400}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:35px}
+.card{background:#141414;padding:25px;text-align:center;transition:.3s;border:1px solid #222}
+.card:hover{transform:translateY(-10px);border-color:#f5c400}
+.card img{width:100%;margin-bottom:18px}
+.price{opacity:.8;margin:10px 0}
+.buy{margin-top:12px;width:100%;padding:12px;background:#f5c400;color:#000;border:none;font-weight:bold;cursor:pointer}
+.about,.contact{text-align:center;max-width:900px;margin:auto;opacity:.85;font-size:18px;line-height:1.7}
+footer{border-top:1px solid #222;padding:40px 50px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;font-size:14px;opacity:.75}
+footer h3{color:#f5c400;margin-bottom:15px}
+footer a{display:block;color:#fff;text-decoration:none;margin-bottom:8px;opacity:.8}
+footer a:hover{opacity:1}
+@media(max-width:768px){.hero{flex-direction:column;text-align:center}.hero img{width:100%;margin-top:40px}.hero-text h1{font-size:46px}}
+</style>
+</head>
+<body><header>
+<div class="logo">URBANSTEP</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#shoes">Shoes</a>
+<a href="#shirts">Shirts</a>
+<a href="#pants">Pants</a>
+<a href="#watches">Watches</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header><section class="hero" id="home">
+<div class="hero-text">
+<h1>BIGGEST<br>FASHION STORE</h1>
+<p>Shoes • Shirts • Pants • Watches. Premium dark design with bold yellow identity. Built to sell, built to scale.</p>
+<button class="btn" onclick="document.getElementById('shoes').scrollIntoView({behavior:'smooth'})">SHOP NOW</button>
+</div>
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+</section><section id="shoes">
+<h2>SHOES COLLECTION</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"><h3>Classic Runner</h3><div class="price">₹3,999</div><button class="buy" onclick="buy('Classic Runner')">Buy on WhatsApp</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"><h3>Urban Street</h3><div class="price">₹4,499</div><button class="buy" onclick="buy('Urban Street')">Buy on WhatsApp</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1606813909355-d93b9c0c0f45"><h3>Daily Flex</h3><div class="price">₹2,999</div><button class="buy" onclick="buy('Daily Flex')">Buy on WhatsApp</button></div>
+</div>
+</section><section id="shirts">
+<h2>SHIRTS</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1521335629791-ce4aec67ddaf"><h3>Black Casual Shirt</h3><div class="price">₹1,599</div><button class="buy" onclick="buy('Black Casual Shirt')">Buy on WhatsApp</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1520975916090-3105956dac38"><h3>Yellow Street Shirt</h3><div class="price">₹1,799</div><button class="buy" onclick="buy('Yellow Street Shirt')">Buy on WhatsApp</button></div>
+</div>
+</section><section id="pants">
+<h2>PANTS</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"><h3>Black Slim Fit</h3><div class="price">₹2,199</div><button class="buy" onclick="buy('Black Slim Fit Pant')">Buy on WhatsApp</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246"><h3>Urban Cargo</h3><div class="price">₹2,499</div><button class="buy" onclick="buy('Urban Cargo Pant')">Buy on WhatsApp</button></div>
+</div>
+</section><section id="watches">
+<h2>WATCHES</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"><h3>Black Steel Watch</h3><div class="price">₹4,999</div><button class="buy" onclick="buy('Black Steel Watch')">Buy on WhatsApp</button></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1519744792095-2f2205e87b6f"><h3>Yellow Dial Watch</h3><div class="price">₹5,499</div><button class="buy" onclick="buy('Yellow Dial Watch')">Buy on WhatsApp</button></div>
+</div>
+</section><section id="about">
+<h2>ABOUT US</h2>
+<p class="about">URBANSTEP is built as a premium all-in-one fashion destination. Dark luxury design, bold yellow identity, and direct-to-WhatsApp selling. No middlemen. No nonsense. Just products that move with you.</p>
+</section><section id="contact">
+<h2>CONTACT</h2>
+<p class="contact">📞 WhatsApp: +91 9900905169<br>📍 India<br>📩 Instagram DM available</p>
+</section><footer>
+<div><h3>URBANSTEP</h3><p>Premium Fashion & Footwear</p></div>
+<div><h3>Categories</h3><a>Shoes</a><a>Shirts</a><a>Pants</a><a>Watches</a></div>
+<div><h3>Support</h3><a>Shipping</a><a>Returns</a><a>Contact</a></div>
+<div><h3>Legal</h3><a>Privacy Policy</a><a>Terms</a></div>
+</footer><script>
+function buy(product){
+const phone='919900905169';
+const msg=`Hello, I want to buy ${product}`;
+window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`,'_blank');
+}
+</script></body>
+</html>

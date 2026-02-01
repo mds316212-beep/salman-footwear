@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salman Store</title>
+  <style>
+    :root{
+      --bg:#0b0b0b;--card:#141414;--yellow:#f5c400;--text:#ffffff;--muted:#9a9a9a
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
+    body{background:var(--bg);color:var(--text)}
+    a{text-decoration:none;color:inherit}
+    header{background:#000;position:sticky;top:0;z-index:100}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:15px 25px}
+    .logo{font-size:24px;font-weight:700;color:var(--yellow)}
+    .search{flex:1;margin:0 20px}
+    .search input{width:100%;padding:10px;border-radius:6px;border:none}
+    .nav-actions a{margin-left:15px;font-size:14px}
+    .hero{padding:60px 25px;background:linear-gradient(135deg,#000,#1a1a1a)}
+    .hero h1{font-size:42px;color:var(--yellow)}
+    .hero p{margin:15px 0;color:var(--muted);max-width:600px}
+    .hero button{padding:12px 25px;background:var(--yellow);border:none;border-radius:6px;font-weight:700;cursor:pointer}
+    .section{padding:40px 25px}
+    .section h2{margin-bottom:20px;font-size:26px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+    .card{background:var(--card);border-radius:12px;padding:15px;transition:.3s}
+    .card:hover{transform:translateY(-5px)}
+    .card img{width:100%;height:180px;object-fit:cover;border-radius:10px}
+    .card h3{margin:10px 0;font-size:16px}
+    .price{color:var(--yellow);font-weight:700}
+    .card button{margin-top:10px;width:100%;padding:10px;border:none;border-radius:6px;background:var(--yellow);font-weight:700;cursor:pointer}
+    .categories{display:flex;gap:15px;overflow-x:auto}
+    .cat{min-width:140px;background:#111;padding:20px;border-radius:10px;text-align:center;border:1px solid #222}
+    footer{background:#000;padding:30px 25px;margin-top:40px}
+    footer p{color:var(--muted);font-size:14px}
+    .whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:15px 18px;border-radius:50%;font-size:22px;font-weight:700}
+    @media(max-width:600px){.hero h1{font-size:32px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="logo">SALMAN</div>
+    <div class="search"><input placeholder="Search shoes, shirts, watches..."></div>
+    <div class="nav-actions">
+      <a href="#">Cart</a>
+      <a href="#">Account</a>
+    </div>
+  </div>
+</header><section class="hero">
+  <h1>Premium Fashion. Dark Luxury.</h1>
+  <p>Shoes, Shirts, Pants & Watches — inspired by global brands. Amazon-style shopping experience.</p>
+  <button>Shop Now</button>
+</section><section class="section">
+  <h2>Categories</h2>
+  <div class="categories">
+    <div class="cat">Shoes</div>
+    <div class="cat">Shirts</div>
+    <div class="cat">Pants</div>
+    <div class="cat">Watches</div>
+  </div>
+</section><section class="section">
+  <h2>Featured Products</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1528701800489-20be3c1b7e35" />
+      <h3>Luxury Sneakers</h3>
+      <div class="price">₹2,999</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593032465171-8f0e5e43a0b8" />
+      <h3>Dark Casual Shirt</h3>
+      <div class="price">₹1,799</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3" />
+      <h3>Premium Watch</h3>
+      <div class="price">₹4,999</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273" />
+      <h3>Classic Pants</h3>
+      <div class="price">₹2,199</div>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</section><footer>
+  <p>© 2026 Salman Store | WhatsApp Orders: 9900905169</p>
+</footer><a class="whatsapp" href="https://wa.me/919900905169">🟢</a>
+
+</body>
+</html>

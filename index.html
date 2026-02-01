@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UrbanStep Footwear</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+    body{background:#0f0f0f;color:#fff}
+    header{display:flex;justify-content:space-between;align-items:center;padding:20px 50px;position:sticky;top:0;background:#0f0f0f;z-index:10}
+    .logo{font-size:22px;letter-spacing:4px;font-weight:bold}
+    nav a{color:#fff;text-decoration:none;margin-left:25px;font-size:14px;opacity:.8}
+    nav a:hover{opacity:1}
+    section{padding:80px 50px}
+    .hero{display:flex;align-items:center;justify-content:space-between;min-height:90vh}
+    .hero-text{max-width:520px}
+    .hero-text h1{font-size:56px;margin-bottom:20px}
+    .hero-text p{opacity:.8;margin-bottom:30px}
+    .btn{padding:14px 32px;background:#fff;color:#000;border:none;font-weight:bold;cursor:pointer}
+    .hero img{width:45%;filter:drop-shadow(0 20px 40px rgba(0,0,0,.6))}
+    h2{text-align:center;font-size:36px;margin-bottom:40px}
+    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+    .card{background:#1a1a1a;padding:25px;text-align:center;transition:.3s}
+    .card:hover{transform:translateY(-8px)}
+    .card img{width:100%;margin-bottom:15px}
+    .price{opacity:.8;margin:8px 0}
+    .buy{margin-top:10px;width:100%;padding:10px;background:#25D366;color:#000;border:none;font-weight:bold;cursor:pointer}
+    .about,.contact{text-align:center;max-width:700px;margin:auto;opacity:.85}
+    footer{border-top:1px solid #222;padding:30px 50px;display:flex;justify-content:space-between;opacity:.7;font-size:14px}
+    @media(max-width:768px){.hero{flex-direction:column;text-align:center}.hero img{width:100%;margin-top:40px}}
+  </style>
+</head>
+<body><header>
+  <div class="logo">URBANSTEP</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#collection">Collection</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><section class="hero" id="home">
+  <div class="hero-text">
+    <h1>Move Bold.<br>Walk Urban.</h1>
+    <p>Premium everyday footwear designed for comfort, durability, and street style.</p>
+    <button class="btn" onclick="document.getElementById('collection').scrollIntoView({behavior:'smooth'})">EXPLORE</button>
+  </div>
+  <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" />
+</section><section id="collection">
+  <h2>Collection</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" />
+      <h3>Classic Runner</h3>
+      <div class="price">₹3,999</div>
+      <button class="buy" onclick="buy('Classic Runner')">Buy on WhatsApp</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" />
+      <h3>Urban Street</h3>
+      <div class="price">₹4,499</div>
+      <button class="buy" onclick="buy('Urban Street')">Buy on WhatsApp</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606813909355-d93b9c0c0f45" />
+      <h3>Daily Flex</h3>
+      <div class="price">₹2,999</div>
+      <button class="buy" onclick="buy('Daily Flex')">Buy on WhatsApp</button>
+    </div>
+  </div>
+</section><section id="about">
+  <h2>About Us</h2>
+  <p class="about">UrbanStep is built for everyday movement. We focus on clean design, durable materials, and all-day comfort — without overpricing. Designed for streets, work, and life.</p>
+</section><section id="contact">
+  <h2>Contact</h2>
+  <p class="contact">📞 WhatsApp: +91XXXXXXXXXX<br>📍 India<br>📩 DM us on Instagram</p>
+</section><footer>
+  <div>© 2026 UrbanStep</div>
+  <div>Designed for modern movement</div>
+</footer><script>
+function buy(product){
+  const phone = '919900905169';
+  const msg = `Hello, I want to buy ${product}`;
+  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`,'_blank');
+}
+</script></body>
+</html>
